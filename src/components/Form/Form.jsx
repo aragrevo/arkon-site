@@ -7,10 +7,11 @@ const Form = () => {
       name='contact'
       method='POST'
     >
+      <input type='hidden' name='form-name' value='contact' />
       <label>
         Tu nombre
         <input
-          name='text'
+          name='name'
           type='text'
           // value={email}
           // onChange={(e) => setEmail(e.target.value)}
@@ -30,7 +31,7 @@ const Form = () => {
       <label>
         Asunto
         <textarea
-          name='text'
+          name='message'
           type='text'
           // value={email}
           // onChange={(e) => setEmail(e.target.value)}
@@ -38,7 +39,9 @@ const Form = () => {
         />
       </label>
 
-      <button className='form-button'>Enviar</button>
+      <button className='form-button' type='submit'>
+        Enviar
+      </button>
     </form>
   );
 };
