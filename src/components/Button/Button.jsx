@@ -18,7 +18,7 @@ const Button = ({ text }) => {
     }, 1500);
 
     console.log(e);
-    window.scrollTo(0, e.screenY * 5);
+    window.scrollTo(0, e.screenY * 100);
   };
 
   return (

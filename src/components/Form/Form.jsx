@@ -38,6 +38,7 @@ const Form = () => {
           required
         />
       </label>
+      <div data-netlify-recaptcha='true'></div>
 
       <button className='form-button' type='submit'>
         Enviar
