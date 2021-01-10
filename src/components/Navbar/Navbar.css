@@ -1,5 +1,5 @@
 .hamburger {
-  position: absolute;
+  position: fixed;
   top: 25px;
   right: 50px;
   cursor: pointer;
@@ -33,11 +33,12 @@
   clip-path: polygon(45% 0, 100% 0, 100% 100%, 70% 100%);
   transform: translateX(100%);
   transition: all 0.3s;
+  z-index: 998;
 }
 
 .nav-list {
   position: absolute;
-  right: 20%;
+  right: 5%;
   top: 50%;
   transform: translateY(-50%);
   list-style: none;
@@ -56,7 +57,7 @@
 .nav-list li a {
   text-decoration: none;
   text-transform: capitalize;
-  font-size: var(--font-large);
+  font-size: calc(var(--font-normal) * 1.4);
   color: var(--color-light);
   position: relative;
 }
@@ -66,7 +67,7 @@
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: var(--color-light);
+  background-color: var(--color-primary);
   bottom: -5px;
   left: 0;
   transition: all 0.3s;
@@ -100,4 +101,20 @@
   transform: translateX(0);
   opacity: 1;
   transition-delay: 0.3s;
+}
+
+/* @media (min-width: calc(var(--large-device) + 10px)) { */
+@media (min-width: 576px) {
+  .nav-list {
+    right: 10%;
+  }
+  .nav-list li a {
+    font-size: var(--font-large);
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-list {
+    right: 20%;
+  }
 }
