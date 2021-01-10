@@ -3,38 +3,40 @@
   top: 0;
   right: 0;
   left: 0;
-  transition: all 0.8s;
+  transition: all 1s;
   animation: zoomView 1500ms;
   animation-fill-mode: forwards;
   z-index: 990;
 }
 
 .header.normal {
-  animation: normalView 1500ms;
+  animation: normalView 1300ms;
   animation-fill-mode: forwards;
+  height: 75px;
+  align-items: center;
+  display: flex;
 }
 
 @keyframes zoomView {
   from {
-    /* transform: scale(1.1) translateX(14%); */
-    transform: translateY(10px);
+    /* height: 75px;
+    align-items: center;
+    display: flex; */
   }
   to {
-    /* transform: scale(1); */
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    opacity: 1.5;
   }
 }
 
 @keyframes normalView {
   from {
-    /* transform: scale(1); */
-    opacity: 1.5;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    opacity: 1;
   }
   to {
-    /* transform: scale(1.1) translateX(14%); */
-    transform: translateY(10px);
+    opacity: 1.5;
+    height: 200px;
+    align-items: center;
+    display: flex;
   }
 }
 

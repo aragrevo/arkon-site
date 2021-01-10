@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
-import Hero from './components/Hero/Hero';
+import Hero from './views/Hero/Hero';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
+import Contact from './views/Contact/Contact';
 
 function App() {
   const [scroll, setScroll] = useState(0);
@@ -34,9 +35,7 @@ function App() {
         <section id='about' className='about'>
           about
         </section>
-        <section id='contact' className='contact'>
-          contact
-        </section>
+        <Contact />
       </main>
     </div>
   );

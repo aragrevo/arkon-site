@@ -16,6 +16,9 @@
   --medium-device: 768px;
   --large-device: 992px;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   min-height: 100vh;

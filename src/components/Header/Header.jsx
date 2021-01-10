@@ -7,9 +7,13 @@ const Header = ({ scroll }) => {
   const [transform, setTransform] = useState(false);
   useEffect(() => {
     switch (true) {
-      case scroll < 25:
-        setBackground('#fff');
+      case scroll < 7:
+        setBackground('transparent');
         setTransform(false);
+        break;
+      case scroll >= 7 && scroll < 25:
+        setBackground('#fff');
+        setTransform(true);
         break;
       case scroll >= 25 && scroll < 50:
         setBackground('#da4747');
