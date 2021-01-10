@@ -4,6 +4,7 @@ import Hero from './views/Hero/Hero';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Contact from './views/Contact/Contact';
+import FloatButton from './components/FloatButton/FloatButton';
 
 function App() {
   const [scroll, setScroll] = useState(0);
@@ -21,6 +22,7 @@ function App() {
     <div className='App'>
       <Navbar />
       <Header scroll={scroll} />
+      <FloatButton />
       {/* <h1 className='section-heading'>navbar</h1> */}
       {/* smooth navigation  */}
       <div id='scrollIndicator' style={{ width: scroll + '%' }}></div>
