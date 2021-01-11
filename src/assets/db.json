@@ -1,4 +1,11 @@
 {
+  "menu": [
+    { "path": "#home", "title": "Inicio" },
+    { "path": "#services", "title": "Servicios" },
+    { "pathd": "#gallery", "titled": "Galería" },
+    { "pathd": "#about", "titled": "Nosotros" },
+    { "path": "#contact", "title": "Contacto" }
+  ],
   "services": [
     {
       "icon": "https://ddo0fzhfvians.cloudfront.net/uploads/icons/png/15645555991582988862-512.png",

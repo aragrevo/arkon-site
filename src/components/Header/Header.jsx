@@ -2,45 +2,29 @@ import React, { useState, useEffect } from 'react';
 import './Header.css';
 import logo from '../../assets/images/logos/logo2.png';
 
-const Header = ({ scroll }) => {
-  const [background, setBackground] = useState('transparent');
-  const [transform, setTransform] = useState(false);
+const Header = () => {
+  const [showFixed, setShowFixed] = useState(false);
+  // const [isVisible, element] = useNearScreen();
+  // console.log(element);
+
   useEffect(() => {
-    switch (true) {
-      case scroll < 7:
-        setBackground('transparent');
-        setTransform(false);
-        break;
-      case scroll >= 7 && scroll < 25:
-        setBackground('#ffffffcc');
-        setTransform(true);
-        break;
-      case scroll >= 25 && scroll < 50:
-        setBackground('#db6400cc');
-        setTransform(true);
-        break;
-      case scroll >= 50 && scroll < 75:
-        setBackground('#da4747cc');
-        setTransform(true);
-        break;
-      case scroll >= 75 && scroll < 100:
-        setBackground('#61b15a1a');
-        setTransform(true);
-        break;
-      case scroll === 100:
-        setBackground('#ffa62bcc');
-        setTransform(true);
-        break;
-      default:
-        break;
-    }
-  }, [scroll, background]);
+    const onScroll = (e) => {
+      const newShowFixed = window.scrollY > 180;
+      if (showFixed !== newShowFixed) {
+        setShowFixed(newShowFixed);
+      }
+    };
+
+    document.addEventListener('scroll', onScroll);
+
+    return () => document.removeEventListener('scroll', onScroll);
+  }, [showFixed]);
+
   return (
-    // <header id='header' className={`header ${background}`}>
     <header
       id='header'
-      className={transform ? 'header' : 'header normal'}
-      style={{ backgroundColor: background }}
+      className={showFixed ? 'header' : 'header normal'}
+      style={{ backgroundColor: showFixed ? '#ffffffcc' : 'transparent' }}
     >
       <div className='container'>
         <h1 className='header-logo'>

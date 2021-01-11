@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-const menu = [
-  { path: '#home', title: 'Inicio' },
-  { path: '#services', title: 'Servicios' },
-  { path: '#gallery', title: 'Galería' },
-  { path: '#about', title: 'Nosotros' },
-  { path: '#contact', title: 'Contacto' },
-];
+import { menu } from '../../assets/db.json';
 
 const Navbar = () => {
   const [isActive, setActive] = useState(false);
