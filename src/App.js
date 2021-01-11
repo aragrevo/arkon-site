@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Contact from './views/Contact/Contact';
 import FloatButton from './components/FloatButton/FloatButton';
+import Services from './views/Services/Services';
 
 function App() {
   const [scroll, setScroll] = useState(0);
@@ -23,16 +24,15 @@ function App() {
       <Navbar />
       <Header scroll={scroll} />
       <FloatButton />
-      {/* <h1 className='section-heading'>navbar</h1> */}
-      {/* smooth navigation  */}
-      <div id='scrollIndicator' style={{ width: scroll + '%' }}></div>
+      <div
+        id='scrollIndicator'
+        style={{ width: scroll + '%', zIndex: 999 }}
+      ></div>
       <main>
         <Hero />
+        <Services />
         <section id='gallery' className='gallery'>
           gallery
-        </section>
-        <section id='services' className='services'>
-          services
         </section>
         <section id='about' className='about'>
           about
