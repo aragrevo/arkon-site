@@ -16,11 +16,11 @@ const Header = ({ scroll }) => {
         setTransform(true);
         break;
       case scroll >= 25 && scroll < 50:
-        setBackground('#da4747');
+        setBackground('#db6400');
         setTransform(true);
         break;
       case scroll >= 50 && scroll < 75:
-        setBackground('#db6400');
+        setBackground('#da4747');
         setTransform(true);
         break;
       case scroll >= 75 && scroll < 100:

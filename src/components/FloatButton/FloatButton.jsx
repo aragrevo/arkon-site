@@ -1,5 +1,6 @@
 import React from 'react';
 import './FloatButton.css';
+import LogoWhatsapp from 'components/LogoWhatsapp/LogoWhatsapp';
 
 const FloatButton = () => {
   return (
@@ -9,11 +10,12 @@ const FloatButton = () => {
       target='_blank'
       rel='noopener noreferrer'
     >
-      <img
+      {/* <img
         className='my-float'
         src='https://cdn.svgporn.com/logos/whatsapp.svg'
         alt='whatsapp'
-      />
+      /> */}
+      <LogoWhatsapp className='my-float' />
     </a>
   );
 };

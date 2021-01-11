@@ -4,7 +4,9 @@
   height: 60px;
   bottom: 40px;
   right: 20px;
-  background-color: #25d366;
+  /* background-color: #4caf50; */
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(1px);
   color: #fff;
   border-radius: 50px;
   text-align: center;

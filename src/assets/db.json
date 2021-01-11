@@ -1,0 +1,44 @@
+{
+  "services": [
+    {
+      "icon": "https://ddo0fzhfvians.cloudfront.net/uploads/icons/png/15645555991582988862-512.png",
+      "title": "Aseoría en Inversión para compra de Bienes",
+      "description": "Usos del suelo, edificabilidad, etc."
+    },
+    {
+      "icon": "https://ddo0fzhfvians.cloudfront.net/uploads/icons/png/7239707841600702105-512.png",
+      "title": "Diseño Arquitectonico",
+      "description": "Interacción con el cliente para sus necesidades"
+    },
+    {
+      "icon": "https://ddo0fzhfvians.cloudfront.net/uploads/icons/png/7750343031553750386-512.png",
+      "title": "Elaboración de Planos y estudios constructivos",
+      "description": "Juegos de planos y estudios interdisciplinarios para el buen desarrollo de las obras"
+    },
+    {
+      "icon": "https://ddo0fzhfvians.cloudfront.net/uploads/icons/png/2055506891557740368-512.png",
+      "title": "Gestión de permiso de las instituciones reguladoras",
+      "description": "Curaduria, servicios publicos, habitad, etc"
+    },
+    {
+      "icon": "https://ddo0fzhfvians.cloudfront.net/uploads/icons/png/1510415291555931400-512.png",
+      "title": "Actualización y renovación de inmuebles",
+      "description": "Adecuaciones, remodelaciones, reforzamientos estructurales, etc"
+    },
+    {
+      "icon": "https://ddo0fzhfvians.cloudfront.net/uploads/icons/png/6261712171580359458-512.png",
+      "title": "Revisión y acondicionamiento de edificaciones para uso de discapacitados",
+      "description": ""
+    },
+    {
+      "icon": "https://ddo0fzhfvians.cloudfront.net/uploads/icons/png/424507321579090788-512.png",
+      "title": "Modelado y visualización de proyectos",
+      "description": ""
+    },
+    {
+      "icon": "https://ddo0fzhfvians.cloudfront.net/uploads/icons/png/8406449191600002099-512.png",
+      "title": "Gerencia y construccion de edificaciones",
+      "description": ""
+    }
+  ]
+}
