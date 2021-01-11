@@ -12,28 +12,26 @@ const Header = ({ scroll }) => {
         setTransform(false);
         break;
       case scroll >= 7 && scroll < 25:
-        setBackground('#fff');
+        setBackground('#ffffffcc');
         setTransform(true);
         break;
       case scroll >= 25 && scroll < 50:
-        setBackground('#db6400');
+        setBackground('#db6400cc');
         setTransform(true);
         break;
       case scroll >= 50 && scroll < 75:
-        setBackground('#da4747');
+        setBackground('#da4747cc');
         setTransform(true);
         break;
       case scroll >= 75 && scroll < 100:
-        setBackground('#61b15a');
+        setBackground('#61b15a1a');
         setTransform(true);
         break;
       case scroll === 100:
-        setBackground('#ffa62b');
+        setBackground('#ffa62bcc');
         setTransform(true);
         break;
       default:
-        setBackground('#transparent');
-        setTransform(false);
         break;
     }
   }, [scroll, background]);
