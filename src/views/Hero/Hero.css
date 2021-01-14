@@ -28,7 +28,7 @@
 .hero-description {
   font-size: calc(var(--font-normal) * 1.5);
   text-align: justify;
-  color: var(--color-secondary);
+  color: #565656;
   margin-top: 0;
   padding: 20px 0;
 }
@@ -48,5 +48,14 @@
 @media (min-width: 992px) {
   .hero-container {
     max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+  .hero {
+    padding-bottom: 5%;
+  }
+  .hero-title {
+    margin-top: 10%;
   }
 }

@@ -69,12 +69,18 @@
   padding-bottom: 13px;
 }
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .header-logo span {
     display: initial;
   }
 
   .header-logo small {
     display: initial;
+  }
+}
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+  .header.normal {
+    display: block;
   }
 }

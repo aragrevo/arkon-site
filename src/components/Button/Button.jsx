@@ -17,8 +17,7 @@ const Button = ({ text }) => {
       setPosition({ x: 0, y: 0 });
     }, 1500);
 
-    console.log(e);
-    window.scrollTo(0, e.screenY * 100);
+    window.location = '#contact';
   };
 
   return (

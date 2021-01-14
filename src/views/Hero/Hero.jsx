@@ -9,9 +9,9 @@ const Hero = () => {
         <h1 className='hero-title'>
           Construimos <span className='color-primary'>Sueños</span>
         </h1>
-        <h3 className='hero-description'>
-          Sé la estrella de rock que siempre quisiste ser
-        </h3>
+        <h2 className='hero-description'>
+          Un mundo de soluciones prácticas y rápidas
+        </h2>
         <Button text='Contáctanos' />
       </div>
     </section>
